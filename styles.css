@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(121, 106, 106, 0.421) ;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* home Selection*/
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(116, 113, 113, 0.51);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background: url(1.jpg) no-repeat center; */
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid white;*/
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.main h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align:right;
+    margin: 40px 0px;
+}
+
+.headings{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align:center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    outline: auto;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white,0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 10%;
+    height: 10%;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+#about-me{
+    padding-top: 10px;
+}
+
+#inro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.668);
+    color: white;
+    align-items: center;
+    padding: 20px;
+    
+}
+/* 
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+} */
+
+.service-content {
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    gap: 10px;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.service-img {
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.service-img img {
+    width: 360px;
+    height: 240px;
+    display: block;
+}
+.service-img img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.contact{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    text-align:center;
+    margin: 40px 0px;
+}
+
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+form input,textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ebebebad;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+form input::placeholder,
+textarea::placeholder {
+    color: var(--text-color);
+}
+form textarea {
+    resize: none;
+    height: 200px;
+}
+.contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: #2768d9;
+    color: #fff;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 35%;
+}
+.contact-button:hover {
+    background: var(--hover);
+}
+.footer {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: #ebebebad;
+    color: #000;
+}
+.footer h2 {
+    font-size: 1.5rem;
+/*     margin-bottom: 1.6rem; */
+}
+/* .footer-social a i{
+    color: rgb(10, 26, 208);
+    font-size: 25px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+} */
+
+.copyright {
+    padding: 20px;
+    background: var(--main-color);
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.copyright a{
+    color: #22cf91;
+}
